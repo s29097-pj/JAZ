@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: micmalo
+my:
+  custom:
+    property: Hello from application properties
