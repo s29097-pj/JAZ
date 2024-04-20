@@ -4,3 +4,6 @@ spring:
 my:
   custom:
     property: Hello from application properties
+    login-url: test-login
+    user: test-user
+    password: pass

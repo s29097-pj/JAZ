@@ -25,6 +25,11 @@ public class HelloController {
         return ResponseEntity.ok(someValue);
     }
 
+    @DeleteMapping("/{pathVariable}")
+    public ResponseEntity<Void> deleteData(@PathVariable String pathVariable) {
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     @PostMapping("/model")
     public ResponseEntity<Car> createModel(@RequestBody Car car) {
         return new ResponseEntity<>(car, HttpStatus.CREATED);
