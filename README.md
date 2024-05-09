@@ -36,7 +36,7 @@
 
 > [!TIP]
 > ### Przydatne linki
-- [**Generowanie projektu**](https://start.spring.io/>)
+> [**Generowanie projektu - Spring Initializr**](https://start.spring.io/)
 #### Zjazd_01
 - [Adnotacje w języku Java](http://bykowski.pl/adnotacje-w-jezyku-java-2/)
 - [SPRING](https://vavatech.pl/technologie/frameworki/spring)
