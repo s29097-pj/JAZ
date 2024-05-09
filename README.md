@@ -2,7 +2,7 @@
 ## Java zaawansowana
 
 > [!NOTE]
-> Tematy zjazdów
+> ### Tematy zjazdów
 #### Lekcja 1
   - Wprowadzenie do platformy Spring oraz Spring Core ;
 #### Lekcja 2
@@ -21,7 +21,7 @@
   - Bezpieczeństwo w aplikacjach Spring.
 
 > [!IMPORTANT]
-> Kryteria zaliczenia JAZ 2024
+> ### Kryteria zaliczenia JAZ 2024
 - 5 z 8 zjazdów będzie ocenianych.
     - Na każdym z ocenianych zjazdów do zdobycia max 3 pkt.
         - 1 pkt za pracę domową, 2 pkt za zadania z zajęć.
@@ -35,7 +35,7 @@
 - Do zaliczenia przedmiotu potrzeba uzbierać więcej niż 50% punktów możliwych do zdobycia. 
 
 > [!TIP]
-> Przydatne linki
+> ### Przydatne linki
 - [**Generowanie projektu**](https://start.spring.io/>)
 #### Zjazd_01
 - [Adnotacje w języku Java](http://bykowski.pl/adnotacje-w-jezyku-java-2/)
