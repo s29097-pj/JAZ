@@ -4,8 +4,37 @@
 1. Stwórz nowy projekt za pomocą https://start.spring.io/. 
 Ustaw w nim grupę jako **pl.pjatk**, artefakt jako **3 pierwsze litery swojego imienia** oraz **3 pierwsze litery swojego nazwiska**. 
 Wersja javy niech będzie najwyższa jaką masz (preferowana 11 lub wyżej). 
-2. Stwórz dwie klasy oznaczone adnotacją `@Component`, a następnie stwórz pomiędzy nimi relację poprzez wykorzystanie odpowiedniego konstruktora. 
+
+![img_01_1.png](img/img_01_1.png)
+
+2. Stwórz dwie klasy oznaczone adnotacją `@Component`,
+
+- przykład:
+```java
+MyFirstComponent
+MySecondComponent
+```
+
+- a następnie stwórz pomiędzy nimi relację poprzez wykorzystanie odpowiedniego konstruktora. 
+
+> [!TIP]
+> W klasie MySecondController w konstruktorze dodaj nowy argument - MyFirstComponent, aby wyłołać z niego metodę.
+> 
+> ![img_01_3.png](img/img_01_3.png)
+>
+
+> [!TIP]
+> Dodana metoda w MyFirstComponent:
+> 
+> ![img_01_4.png](img/img_01_4.png)
+> 
+
 3. Wypisz na ekran nazwy obydwu komponentów. 
+
+> [!NOTE]
+> 
+> ![img_01_5.png](img/img_01_5.png)
+> 
  
 ### Ćwiczenie 2
 1. Do poprzednich dwóch klas dodaj po jednej metodzie która wypisze na ekran wiadomość z nazwą komponentu i nazwą metody. 
@@ -23,7 +52,20 @@ Następnie poprzez wykorzystanie metody `.getBean(String name, Class componentCl
 
 ### Ćwiczenie 5 
 1. W pliku `application.properties` dodaj pole `my.custom.property` które przyjmie wartość `Hello from application properties`.
+
+> [!NOTE]
+>
+> ![img_01_6.png](img/img_01_6.png)
+>
+
 2. Wypisz tę wartość w konsoli podczas tworzenia dowolnego beana. 
+
+> [!NOTE]
+>
+> ![img_01_7.png](img/img_01_7.png)
+> 
+> ![img_01_8.png](img/img_01_8.png)
+> 
 
 ### Ćwiczenie 6 
 1. Ustaw domyślną wartość w przypadku braku pola w `application.properties`.
