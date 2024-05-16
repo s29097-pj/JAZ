@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: micmal
+#  main:
+#    banner-mode: off
+#logging:
+#  level:
+#    root: off
+my:
+  custom:
+    property: Hello from application.yml

@@ -5,7 +5,10 @@
 Ustaw w nim grupę jako **pl.pjatk**, artefakt jako **3 pierwsze litery swojego imienia** oraz **3 pierwsze litery swojego nazwiska**. 
 Wersja javy niech będzie najwyższa jaką masz (preferowana 11 lub wyżej). 
 
-![img_01_1.png](img/img_01_1.png)
+> ![img_01.png](img/01/img_01.png)
+> 
+> ![img_02.png](img/01/img_02.png)
+> 
 
 2. Stwórz dwie klasy oznaczone adnotacją `@Component`,
 
@@ -20,20 +23,20 @@ MySecondComponent
 > [!TIP]
 > W klasie MySecondController w konstruktorze dodaj nowy argument - MyFirstComponent, aby wyłołać z niego metodę.
 > 
-> ![img_01_3.png](img/img_01_3.png)
+> ![img_03.png](img/01/img_03.png)
 >
 
 > [!TIP]
 > Dodana metoda w MyFirstComponent:
 > 
-> ![img_01_4.png](img/img_01_4.png)
+> ![img_04.png](img/01/img_04.png)
 > 
 
 3. Wypisz na ekran nazwy obydwu komponentów. 
 
 > [!NOTE]
 > 
-> ![img_01_5.png](img/img_01_5.png)
+> ![img_05.png](img/01/img_05.png)
 > 
  
 ### Ćwiczenie 2
@@ -55,16 +58,16 @@ Następnie poprzez wykorzystanie metody `.getBean(String name, Class componentCl
 
 > [!NOTE]
 >
-> ![img_01_6.png](img/img_01_6.png)
+> ![img_06.png](img/01/img_06.png)
 >
 
 2. Wypisz tę wartość w konsoli podczas tworzenia dowolnego beana. 
 
 > [!NOTE]
 >
-> ![img_01_7.png](img/img_01_7.png)
+> ![img_07.png](img/01/img_07.png)
 > 
-> ![img_01_8.png](img/img_01_8.png)
+> ![img_08.png](img/01/img_08.png)
 > 
 
 ### Ćwiczenie 6 
@@ -73,9 +76,20 @@ Następnie poprzez wykorzystanie metody `.getBean(String name, Class componentCl
 
 ### Ćwiczenie 7
 1. Zmień plik z formatu `application.properties` na format `application.yml`. 
+> [!NOTE]
+>
+> ![img_09.png](img/01/img_09.png)
+> 
 
 ## Praca domowa
 1. W pliku `application.properties` (lub `application.yml`) stwórz własną zmienną która domyślnie przyjmie wartość `false`. 
 Utwórz dodatkowo profil, który zmieni wartość tej zmiennej na `true`.
+> [!NOTE]
+>
+> ![img_10.png](img/01/img_10.png)
+>
+> ![img_11.png](img/01/img_11.png)
+> 
+
 2. Utwórz bean’a który będzie inicjował się tylko wtedy gdy uruchomisz aplikację z profilem, który w tej zmiennej posiada wartość `true`. 
 W przypadku profilu który zostawiał zmienną z wartością `false` bean nie może się utworzyć. 
