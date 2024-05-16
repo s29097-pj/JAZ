@@ -1,4 +1,4 @@
 my:
   custom:
-    my.custom.property: Hello from application-dev.yml
+    property: Hello from application-dev.yml
     variable: false

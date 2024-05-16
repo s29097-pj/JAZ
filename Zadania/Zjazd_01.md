@@ -84,15 +84,16 @@ Następnie poprzez wykorzystanie metody `.getBean(String name, Class componentCl
 ## Praca domowa
 1. W pliku `application.properties` (lub `application.yml`) stwórz własną zmienną która domyślnie przyjmie wartość `false`. 
 Utwórz dodatkowo profil, który zmieni wartość tej zmiennej na `true`.
-> [!NOTE]
 
+> [!NOTE] 
+> 
 > Można zdefiniować różne wartości dla własnej zmiennej `my.custom.variable` w różnych profilach Spring Boot. 
 > Profil to zestaw ustawień, które mogą być aktywowane w różnych środowiskach. 
 > Można utworzyć pliki `application-{profile}.yml` dla różnych profili, gdzie `{profile}` to nazwa profilu.
 
 > Na przykład, można mieć profil `dev` i `prod`, które mają różne wartości `my.custom.variable`. 
 > W takim przypadku, tworzy się pliki `application-dev.yml` i `application-prod.yml` w katalogu `resources` projektu.
-
+ 
 Plik `application-dev.yml`:
 ```yaml
 my:
