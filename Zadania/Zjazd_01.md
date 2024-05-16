@@ -85,10 +85,39 @@ Następnie poprzez wykorzystanie metody `.getBean(String name, Class componentCl
 1. W pliku `application.properties` (lub `application.yml`) stwórz własną zmienną która domyślnie przyjmie wartość `false`. 
 Utwórz dodatkowo profil, który zmieni wartość tej zmiennej na `true`.
 > [!NOTE]
->
+
+> Można zdefiniować różne wartości dla własnej zmiennej `my.custom.variable` w różnych profilach Spring Boot. 
+> Profil to zestaw ustawień, które mogą być aktywowane w różnych środowiskach. 
+> Można utworzyć pliki `application-{profile}.yml` dla różnych profili, gdzie `{profile}` to nazwa profilu.
+
+> Na przykład, można mieć profil `dev` i `prod`, które mają różne wartości `my.custom.variable`. 
+> W takim przypadku, tworzy się pliki `application-dev.yml` i `application-prod.yml` w katalogu `resources` projektu.
+
+Plik `application-dev.yml`:
+```yaml
+my:
+  custom:
+    variable: true
+```
 > ![img_10.png](img/01/img_10.png)
->
+
+Plik `application-prod.yml`:
+```yaml
+my:
+  custom:
+    variable: false
+```
 > ![img_11.png](img/01/img_11.png)
+
+Uruchomienie aplikacji Spring Boot z profilem `dev`, `my.custom.variable` będzie miało wartość `true`. 
+Aplikacja z profilem `prod`, `my.custom.variable` będzie miało wartość `false`.
+
+Aktywacja profil za pomocą parametru `spring.profiles.active` w pliku `application.yml` lub jako argument podczas uruchamiania aplikacji (`-Dspring.profiles.active=dev`).
+
+>
+> ![img_12.png](img/01/img_12.png)
+> 
+> ![img_13.png](img/01/img_13.png)
 > 
 
 2. Utwórz bean’a który będzie inicjował się tylko wtedy gdy uruchomisz aplikację z profilem, który w tej zmiennej posiada wartość `true`. 
