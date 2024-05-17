@@ -190,3 +190,10 @@ yarn.lock
 
 ```
 [Źródło ze strony: Czego Nie Dodawać Do Repozytorium Java/Spring: Najczęstsze Błędy!](https://bykowski.pl/czego-nie-dodawac-do-repozytorium-java-spring-najczestsze-bledy/)
+
+## Konfiguracja `.gitignore` w aplikacji Github Desktop: 
+
+*Wybrać:*
+Repository \ Repository settings:
+
+![GitHub_Desktop_01.png](img/git/GitHub_Desktop_01.png)
