@@ -1,4 +1,0 @@
-my:
-  custom:
-    property: Hello from application-dev.yml
-    variable: false
