@@ -196,4 +196,4 @@ yarn.lock
 *Wybrać:*
 Repository \ Repository settings:
 
-![GitHub_Desktop_01.png](img/git/GitHub_Desktop_01.png)
+![GitHub_Desktop_01.png](Zadania/img/git/GitHub_Desktop_01.png)
