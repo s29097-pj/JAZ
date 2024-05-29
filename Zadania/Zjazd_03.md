@@ -9,7 +9,7 @@
 `@ConfigurationProperties` z użyciem dedykowanych klas.
 1. Do pliku `application.yml` dodaj poniższe wartości:
    
-![img_03_1.png](img/img_03_1.png)
+![img_01.png](img/img_01.png)
 
 2. Korzystając z adnotacji `@ConfigurationProperties` wstrzyknij podane wartości do `KLASY`.
 3. W dowolnym miejscu wypisz te wartości na ekran.
@@ -18,7 +18,7 @@
 `@ConfigurationProperties` z użyciem dedykowanych klas.
 1. Przekształć poprzednie wartości do takiego formatu:
    
-![img_03_2.png](img/img_03_2.png)
+![img_02.png](img/img_02.png)
 
 2. Korzystając z adnotacji `@ConfigurationProperties` wstrzyknij podane wartości do `KLASY`.
 3. W dowolnym miejscu wypisz te wartości na ekran.
