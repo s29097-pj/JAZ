@@ -45,3 +45,20 @@ Welcome to MySQL Workbench
 ### Intellij IDEA
 
 ![img_03.png](img/img_03.png)
+
+zawartość pliku `application.properties`, aby połączyć się z bazą MySQL:
+
+```java
+spring.datasource.url=jdbc:mysql://localhost:3306/movieservicedb
+spring.datasource.username=root
+spring.datasource.password=Qwerty12
+```
+zawartość pliku `pom.xml`, z odpowiednimi dependencjami, aby połączyć się z bazą MySQL:
+
+```java
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.26</version>
+</dependency>
+```
