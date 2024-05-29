@@ -48,14 +48,14 @@ informuje, że wartość tego pola jest generowana automatycznie przez bazę dan
 
 Oto fragment kodu, który to realizuje:
 
-![img_01.png](Zadania/img/05/img_01.png)
+![img_01.png](img/05/img_01.png)
 
 ### Ćwiczenie 3 
 1. Dodaj interfejs rozszerzający `JpaRepository`.
 
 - interfejs `MovieRepository` rozszerza `JpaRepository`:
 
-![img_02.png](Zadania/img/05/img_02.png)
+![img_02.png](img/05/img_02.png)
 
 2. Przepisz `MovieService` tak, aby od teraz wykorzystywał dane dostarczane z bazy danych.
 
@@ -65,7 +65,7 @@ do pobrania wszystkich filmów.
 
 Oto fragment kodu, który to realizuje:
 
-![img_03.png](Zadania/img/05/img_03.png)
+![img_03.png](img/05/img_03.png)
 
 ## Praca domowa
 1. Zapoznaj się ze springowymi [Query Methods](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html).
