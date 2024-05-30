@@ -1,8 +1,6 @@
 package pl.pjatk.movieservice.model;
 
 import jakarta.persistence.*;
-import jakarta.persistence.GeneratedValue;
-import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 public class Movie {
@@ -13,23 +11,21 @@ public class Movie {
     private String name;
     private String category;
     private String director;
-    private Integer release_year;
+
+    @Column(name = "release_year")
+    private Integer releaseYear;
+
     private Double rating;
 
     public Movie() {
     }
 
-    public Movie(String name, String category, String director, Integer release_year, Double rating) {
+    public Movie(String name, String category, String director, Integer releaseYear, Double rating) {
         this.name = name;
         this.category = category;
         this.director = director;
-        this.release_year = release_year;
+        this.releaseYear = releaseYear;
         this.rating = rating;
-    }
-
-    public Movie(String name, String category) {
-        this.name = name;
-        this.category = category;
     }
 
     public Long getId() {
@@ -65,11 +61,11 @@ public class Movie {
     }
 
     public Integer getReleaseYear() {
-        return release_year;
+        return releaseYear;
     }
 
-    public void setReleaseYear(Integer release_year) {
-        this.release_year = release_year;
+    public void setReleaseYear(Integer releaseYear) {
+        this.releaseYear = releaseYear;
     }
 
     public Double getRating() {
