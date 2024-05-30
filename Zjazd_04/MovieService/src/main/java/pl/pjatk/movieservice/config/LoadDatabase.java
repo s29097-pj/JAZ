@@ -10,14 +10,14 @@ import pl.pjatk.movieservice.repository.MovieRepository;
 @Configuration
 public class LoadDatabase {
 
-    @Bean
-    CommandLineRunner initDatabase(MovieRepository repository) {
-        return args -> {
-            repository.save(new Movie("Inception", "THRILLER"));
-            repository.save(new Movie("The Matrix", "ACTION"));
-            repository.save(new Movie("Interstellar", "THRILLER"));
-            repository.save(new Movie("The Godfather", "CRIME"));
-            repository.save(new Movie("Pulp Fiction", "CRIME"));
-        };
-    }
+@Bean
+CommandLineRunner initDatabase(MovieRepository repository) {
+    return args -> {
+        repository.save(new Movie("Inception", "THRILLER", "Christopher Nolan", 2010, 8.8));
+        repository.save(new Movie("The Matrix", "ACTION", "Lana Wachowski, Lilly Wachowski", 1999, 8.7));
+        repository.save(new Movie("Interstellar", "THRILLER", "Christopher Nolan", 2014, 8.6));
+        repository.save(new Movie("The Godfather", "CRIME", "Francis Ford Coppola", 1972, 9.2));
+        repository.save(new Movie("Pulp Fiction", "CRIME", "Quentin Tarantino", 1994, 8.9));
+    };
+}
 }
