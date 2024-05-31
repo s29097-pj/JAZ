@@ -12,11 +12,11 @@ CREATE TABLE Movie (
     is_available BOOLEAN NOT NULL DEFAULT FALSE
 );
 
-INSERT INTO Movie (name, category, director, release_year, rating) VALUES
-('Inception', 'Thriller', 'Christopher Nolan', 2010, 8.8),
-('The Matrix', 'Action', 'Andy Wachowski, Larry Wachowski', 1999, 8.7),
-('Interstellar', 'Thriller', 'Christopher Nolan', 2014, 8.6),
-('The Godfather', 'Crime', 'Francis Ford Coppola', 1972, 9.2),
-('Pulp Fiction', 'Crime', 'Quentin Tarantino', 1994, 8.9);
+INSERT INTO Movie (name, category, director, release_year, rating, is_available) VALUES
+('Inception', 'Thriller', 'Christopher Nolan', 2010, 8.8, FALSE),
+('The Matrix', 'Action', 'Andy Wachowski, Larry Wachowski', 1999, 8.7, FALSE),
+('Interstellar', 'Thriller', 'Christopher Nolan', 2014, 8.6, FALSE),
+('The Godfather', 'Crime', 'Francis Ford Coppola', 1972, 9.2, FALSE),
+('Pulp Fiction', 'Crime', 'Quentin Tarantino', 1994, 8.9, FALSE);
 
 SELECT * FROM Movie;
