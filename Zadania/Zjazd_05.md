@@ -89,3 +89,16 @@ dodałem metodę `setMovieAvailability`, która obsługuje żądania `PATCH` na 
 Ta metoda ustawia wartość `isAvailable` na `true` dla filmu o podanym `ID`.
 
 ![img_06.png](img/05/img_06.png)
+
+Aby przetestować ten endpoint w Postmanie, wykonałem następujące kroki:  
+1. Otwarłem Postmana.
+2. Wybrałem `PATCH` z rozwijanego menu.
+3. Wprowadziłe URL endpointu, 
+- http://localhost:8080/movies/1/availability ,
+gdzie 1 to ID filmu, którego dostępność chciałem zmienić.
+
+4. Kliknąłem `Send`.
+
+Po wysłaniu żądania, wartość `isAvailable` dla filmu o podanym ID została zmieniona na `true`.
+
+![img_07.png](img/05/img_07.png)
