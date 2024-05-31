@@ -17,6 +17,9 @@ public class Movie {
 
     private Double rating;
 
+    @Column(name = "is_available", nullable = false, columnDefinition = "boolean default false")
+    private Boolean isAvailable = false;
+
     public Movie() {
     }
 
@@ -74,5 +77,8 @@ public class Movie {
 
     public void setRating(Double rating) {
         this.rating = rating;
+    }
+
+    public void setIsAvailable(boolean isAvailable) {
     }
 }
