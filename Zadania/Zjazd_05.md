@@ -90,8 +90,8 @@ Ta metoda ustawia wartość `isAvailable` na `true` dla filmu o podanym `ID`.
 
 ![img_06.png](img/05/img_06.png)
 
-Aby przetestować ten endpoint w Postmanie, wykonałem następujące kroki:  
-1. Otwarłem Postmana.
+Aby przetestować endpoint `PATCH` w Postmanie, wykonałem następujące kroki:  
+1. Otwarłem Postman.
 2. Wybrałem `PATCH` z rozwijanego menu.
 3. Wprowadziłe URL endpointu, 
 - http://localhost:8080/movies/1/availability ,
@@ -102,3 +102,17 @@ gdzie 1 to ID filmu, którego dostępność chciałem zmienić.
 Po wysłaniu żądania, wartość `isAvailable` dla filmu o podanym ID została zmieniona na `true`.
 
 ![img_07.png](img/05/img_07.png)
+
+Aby przetestować endpoint `GET` w Postmanie, wykonałem następujące kroki:
+
+1. Otwarłem Postman.
+2. Kliknąłem na przycisk `New` w lewym górnym rogu, a następnie wybrałem `HTTP`
+4. W rozwijanym menu wybrałem `GET`.
+5. W polu "Enter URL or paste text" wprowadziłem URL endpointu, 
+- http://localhost:8080/movies (zakładając, że aplikacja działa lokalnie na porcie 8080).
+6. Kliknąłem `Send`.
+
+Po wysłaniu żądania, zobaczyłem odpowiedź od serwera w dolnej części okna Postmana. 
+Odpowiedź zawiera listę filmów zwróconych przez endpoint GET.
+
+![img_08.png](img/05/img_08.png)
