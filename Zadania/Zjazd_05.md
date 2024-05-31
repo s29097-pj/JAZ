@@ -71,5 +71,21 @@ Oto fragment kodu, który to realizuje:
 1. Zapoznaj się ze springowymi [Query Methods](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html).
 2. Dodaj do bazy danych nowe pole typu `boolean` o nazwie `is_available`.
    - Niech ono będzie typu `non-null`, oraz niech zawiera domyślną wartość `false`.
-   - Dodaj je również po stronie javy.
+
+![img_04.png](img/05/img_04.png)
+
+  - Dodaj je również po stronie javy.
+
+W klasie `Movie` w pliku `src/main/java/pl/pjatk/movieservice/model/Movie.java`, 
+dodałem pole `isAvailable` z adnotacją `@Column`, która określa, że pole nie może być `null (nullable = false)` 
+i ma domyślną wartość `false (columnDefinition = "boolean default false")`.
+
+![img_05.png](img/05/img_05.png)
+
 5. Dodaj nowy `endpoint`, który będzie JEDYNIE zmieniał wartość tego pola na `true`.
+
+W klasie `MovieController` w pliku `src/main/java/pl/pjatk/movieservice/controller/MovieController.java`, 
+dodałem metodę `setMovieAvailability`, która obsługuje żądania `PATCH` na adres `/movies/{id}/availability`. 
+Ta metoda ustawia wartość `isAvailable` na `true` dla filmu o podanym `ID`.
+
+![img_06.png](img/05/img_06.png)
