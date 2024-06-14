@@ -3,11 +3,32 @@
 ### Ćwiczenie 1 
 1. Stwórz nowy projekt, który będzie nazywał się `RentalService`.
    - Skorzystaj tylko z dependecji `spring-boot-starter-web` oraz `spring-boot-starter-test`.
+
+![img_01.png](img/06/img_01.png)
+
 2. Zmień domyślny port aplikacji na `8081`.
+
+![img_02.png](img/06/img_02.png)
 
 ### Ćwiczenie 2
 1. Dodaj do projektu dokładnie tak samo wyglądający model `Movie`.
+
+> Skopiowałem tylko klasę `Movie` z poprzedniego projektu do nowego projektu. 
+Klasa Movie skopiowałem z `src/main/java/pl/pjatk/movieservice/model/Movie.java.` 
+do `package pl.pjatk.rentalservice.model`;
+
+> Dodałem brakującą zależność (dependencję):
+```
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+```
+![img_03.png](img/06/img_03.png)
+
 2. Dodaj `bean` dla obiektu `RestTemplate`.
+
+![img_04.png](img/06/img_04.png)
 
 ### Ćwiczenie 3 
 1. Stwórz nowy `RestController` oraz `Service` dla dwóch metod.
