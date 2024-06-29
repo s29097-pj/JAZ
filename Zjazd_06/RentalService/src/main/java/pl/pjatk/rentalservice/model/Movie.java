@@ -1,23 +1,31 @@
 package pl.pjatk.rentalservice.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Movie {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(
+            strategy = GenerationType.IDENTITY
+    )
     private Long id;
     private String name;
     private String category;
     private String director;
-
-    @Column(name = "release_year")
+    @Column(
+            name = "release_year"
+    )
     private Integer releaseYear;
-
     private Double rating;
-
-    @Column(name = "is_available", nullable = false, columnDefinition = "boolean default false")
+    @Column(
+            name = "is_available",
+            nullable = false,
+            columnDefinition = "boolean default false"
+    )
     private Boolean isAvailable = false;
 
     public Movie() {
@@ -32,7 +40,7 @@ public class Movie {
     }
 
     public Long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(Long id) {
@@ -40,7 +48,7 @@ public class Movie {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -48,7 +56,7 @@ public class Movie {
     }
 
     public String getCategory() {
-        return category;
+        return this.category;
     }
 
     public void setCategory(String category) {
@@ -56,7 +64,7 @@ public class Movie {
     }
 
     public String getDirector() {
-        return director;
+        return this.director;
     }
 
     public void setDirector(String director) {
@@ -64,7 +72,7 @@ public class Movie {
     }
 
     public Integer getReleaseYear() {
-        return releaseYear;
+        return this.releaseYear;
     }
 
     public void setReleaseYear(Integer releaseYear) {
@@ -72,7 +80,7 @@ public class Movie {
     }
 
     public Double getRating() {
-        return rating;
+        return this.rating;
     }
 
     public void setRating(Double rating) {
